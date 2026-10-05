@@ -1,0 +1,8 @@
+services:
+  museum-web:
+    build: .
+    image: museum-accessible-visit:latest
+    container_name: museum-accessible-visit
+    ports:
+      - "8080:80"
+    restart: unless-stopped
