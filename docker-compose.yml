@@ -1,0 +1,15 @@
+services:
+  museum:
+    build: .
+    container_name: museum-access
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      DATA_DIR: /app/data
+    volumes:
+      - museum-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  museum-data:

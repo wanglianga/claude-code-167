@@ -1,0 +1,15 @@
+{
+  "name": "museum-access-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "博物馆无障碍参观预约与现场服务后端",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
